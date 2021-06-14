@@ -538,7 +538,7 @@ U 1 1 60C6833A
 P 3950 3650
 F 0 "k1" H 3908 3775 50  0000 C CNN
 F 1 "Key" H 3908 3684 50  0000 C CNN
-F 2 "Touch_pad:Touch_pad" H 3950 3650 50  0001 C CNN
+F 2 "Touch_pad:TestPoint_Pad_2.5x2.5sm" H 3950 3650 50  0001 C CNN
 F 3 "" H 3950 3650 50  0001 C CNN
 	1    3950 3650
 	1    0    0    -1  
@@ -549,7 +549,7 @@ U 1 1 60C693B3
 P 4350 3650
 F 0 "k2" H 4308 3775 50  0000 C CNN
 F 1 "Key" H 4308 3684 50  0000 C CNN
-F 2 "Touch_pad:Touch_pad" H 4350 3650 50  0001 C CNN
+F 2 "Touch_pad:TestPoint_Pad_1.0x1.0sm" H 4350 3650 50  0001 C CNN
 F 3 "" H 4350 3650 50  0001 C CNN
 	1    4350 3650
 	1    0    0    -1  
@@ -560,7 +560,7 @@ U 1 1 60C69E9B
 P 4700 3650
 F 0 "k3" H 4658 3775 50  0000 C CNN
 F 1 "Key" H 4658 3684 50  0000 C CNN
-F 2 "Touch_pad:Touch_pad" H 4700 3650 50  0001 C CNN
+F 2 "Touch_pad:TestPoint_Pad_1.0x1.0sm" H 4700 3650 50  0001 C CNN
 F 3 "" H 4700 3650 50  0001 C CNN
 	1    4700 3650
 	1    0    0    -1  
