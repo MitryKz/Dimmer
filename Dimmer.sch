@@ -508,7 +508,7 @@ F 3 "~" H 6700 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Touchpad:Key k3
+L Dimmer-rescue:Key-Touchpad k3
 U 1 1 60C69E9B
 P 8500 5250
 F 0 "k3" H 8458 5375 50  0000 C CNN
@@ -519,7 +519,7 @@ F 3 "" H 8500 5250 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Touchpad:Key k2
+L Dimmer-rescue:Key-Touchpad k2
 U 1 1 60C693B3
 P 8500 3450
 F 0 "k2" H 8458 3575 50  0000 C CNN
@@ -530,7 +530,7 @@ F 3 "" H 8500 3450 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Touchpad:Key k1
+L Dimmer-rescue:Key-Touchpad k1
 U 1 1 60C6833A
 P 8500 3650
 F 0 "k1" H 8458 3775 50  0000 C CNN
@@ -541,7 +541,7 @@ F 3 "" H 8500 3650 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Touchpad:Key k5
+L Dimmer-rescue:Key-Touchpad k5
 U 1 1 60DCD999
 P 8500 3950
 F 0 "k5" H 8458 4075 50  0000 C CNN
@@ -552,7 +552,7 @@ F 3 "" H 8500 3950 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Touchpad:Key k4
+L Dimmer-rescue:Key-Touchpad k4
 U 1 1 60DCDD4E
 P 8500 3850
 F 0 "k4" H 8458 3975 50  0000 C CNN
@@ -563,7 +563,7 @@ F 3 "" H 8500 3850 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Touchpad:Key k6
+L Dimmer-rescue:Key-Touchpad k6
 U 1 1 60DCE2FD
 P 8500 4050
 F 0 "k6" H 8458 4175 50  0000 C CNN
@@ -574,7 +574,7 @@ F 3 "" H 8500 4050 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Touchpad:Key k7
+L Dimmer-rescue:Key-Touchpad k7
 U 1 1 60DCEBF7
 P 8500 5150
 F 0 "k7" H 8458 5275 50  0000 C CNN
@@ -895,21 +895,6 @@ F 3 "" H 6150 1550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6100 1550 6150 1550
-NoConn ~ 4050 3100
-NoConn ~ 4050 3200
-$Comp
-L Driver_FET:FAN3268 U1
-U 1 1 60EFDBA9
-P 3650 3000
-F 0 "U1" H 3650 3681 50  0000 C CNN
-F 1 "FAN3268" H 3650 3590 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3700 2550 50  0001 L CNN
-F 3 "http://www.onsemi.com/pub/Collateral/FAN3268T_F085-D.PDF" H 3650 3100 50  0001 C CNN
-	1    3650 3000
-	-1   0    0    -1  
-$EndComp
-NoConn ~ 4050 2900
-NoConn ~ 3250 2900
 $Comp
 L Device:R R4
 U 1 1 60F2AFE9
@@ -944,28 +929,6 @@ F 3 "~" H 1750 2550 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Transistor_FET:IRF4905 Q2
-U 1 1 60F2E091
-P 2800 3050
-F 0 "Q2" H 3005 3004 50  0000 L CNN
-F 1 "IRFP460APBF" H 3005 3095 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 3000 2975 50  0001 L CIN
-F 3 "http://www.infineon.com/dgdl/irf4905.pdf?fileId=5546d462533600a4015355e32165197c" H 2800 3050 50  0001 L CNN
-	1    2800 3050
-	-1   0    0    1   
-$EndComp
-$Comp
-L Transistor_FET:IRF4905 Q1
-U 1 1 60F3259D
-P 2800 2500
-F 0 "Q1" H 3005 2546 50  0000 L CNN
-F 1 "IRFP460APBF" H 3005 2455 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 3000 2425 50  0001 L CIN
-F 3 "http://www.infineon.com/dgdl/irf4905.pdf?fileId=5546d462533600a4015355e32165197c" H 2800 2500 50  0001 L CNN
-	1    2800 2500
-	-1   0    0    -1  
-$EndComp
-$Comp
 L pspice:C C1
 U 1 1 60F3CB59
 P 1750 2950
@@ -984,7 +947,7 @@ Wire Wire Line
 Wire Wire Line
 	3000 2500 3000 2800
 $Comp
-L w_connectors:HEADER_2x2 J1
+L Dimmer-rescue:HEADER_2x2-w_connectors J1
 U 1 1 60F5D81B
 P 1600 3750
 F 0 "J1" H 1600 4037 60  0000 C CNN
@@ -997,12 +960,12 @@ $EndComp
 $Comp
 L power:GND #PWR0107
 U 1 1 60F5EA64
-P 3650 3500
-F 0 "#PWR0107" H 3650 3250 50  0001 C CNN
-F 1 "GND" H 3655 3327 50  0000 C CNN
-F 2 "" H 3650 3500 50  0001 C CNN
-F 3 "" H 3650 3500 50  0001 C CNN
-	1    3650 3500
+P 3250 3000
+F 0 "#PWR0107" H 3250 2750 50  0001 C CNN
+F 1 "GND" H 3255 2827 50  0000 C CNN
+F 2 "" H 3250 3000 50  0001 C CNN
+F 3 "" H 3250 3000 50  0001 C CNN
+	1    3250 3000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1084,17 +1047,17 @@ Wire Wire Line
 	1550 2100 2300 2100
 Wire Wire Line
 	6350 1350 6100 1350
-Text GLabel 4050 2800 2    50   Input ~ 0
+Text GLabel 4000 2950 2    50   Input ~ 0
 cntrl
 $Comp
 L power:+12V #PWR0118
 U 1 1 61074A57
-P 3650 2500
-F 0 "#PWR0118" H 3650 2350 50  0001 C CNN
-F 1 "+12V" H 3665 2673 50  0000 C CNN
-F 2 "" H 3650 2500 50  0001 C CNN
-F 3 "" H 3650 2500 50  0001 C CNN
-	1    3650 2500
+P 4000 2800
+F 0 "#PWR0118" H 4000 2650 50  0001 C CNN
+F 1 "+12V" H 4015 2973 50  0000 C CNN
+F 2 "" H 4000 2800 50  0001 C CNN
+F 3 "" H 4000 2800 50  0001 C CNN
+	1    4000 2800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1229,7 +1192,7 @@ U 1 1 61111AE3
 P 10200 5800
 F 0 "D5" V 10239 5682 50  0000 R CNN
 F 1 "BLUE" V 10148 5682 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 10200 5800 50  0001 C CNN
+F 2 "LED_THT:LED_D3.0mm_Clear" H 10200 5800 50  0001 C CNN
 F 3 "~" H 10200 5800 50  0001 C CNN
 	1    10200 5800
 	0    -1   -1   0   
@@ -1240,7 +1203,7 @@ U 1 1 611127AF
 P 10600 5800
 F 0 "D6" V 10639 5682 50  0000 R CNN
 F 1 "RED" V 10548 5682 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 10600 5800 50  0001 C CNN
+F 2 "LED_THT:LED_D3.0mm_Clear" H 10600 5800 50  0001 C CNN
 F 3 "~" H 10600 5800 50  0001 C CNN
 	1    10600 5800
 	0    -1   -1   0   
@@ -1302,4 +1265,48 @@ Wire Wire Line
 	9650 5750 9650 6000
 Text GLabel 8450 5650 2    50   Input ~ 0
 GPIO35
+$Comp
+L Transistor_FET:C3M0280090D Q2
+U 1 1 60DBB938
+P 2800 3050
+F 0 "Q2" H 3005 3004 50  0000 L CNN
+F 1 "IRFP460APBF" H 3005 3095 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-247-3_Horizontal_TabDown" H 2800 3050 50  0001 C CIN
+F 3 "https://www.wolfspeed.com/media/downloads/825/C3M0280090D.pdf" H 2800 3050 50  0001 L CNN
+	1    2800 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_FET:C3M0280090D Q1
+U 1 1 60DDB34A
+P 2800 2500
+F 0 "Q1" H 3005 2546 50  0000 L CNN
+F 1 "IRFP460APBF" H 3005 2455 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-247-3_Horizontal_TabDown" H 2800 2500 50  0001 C CIN
+F 3 "https://www.wolfspeed.com/media/downloads/825/C3M0280090D.pdf" H 2800 2500 50  0001 L CNN
+	1    2800 2500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Dimmer-rescue:Fan3100tsx-Fan3100TSX D7
+U 1 1 60DE385E
+P 3600 2700
+F 0 "D7" H 3625 2825 50  0000 C CNN
+F 1 "Fan3100tsx" H 3625 2734 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 3600 2700 50  0001 C CNN
+F 3 "" H 3600 2700 50  0001 C CNN
+	1    3600 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0124
+U 1 1 60DEA9D0
+P 4000 3050
+F 0 "#PWR0124" H 4000 2800 50  0001 C CNN
+F 1 "GND" H 4005 2877 50  0000 C CNN
+F 2 "" H 4000 3050 50  0001 C CNN
+F 3 "" H 4000 3050 50  0001 C CNN
+	1    4000 3050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
