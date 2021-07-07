@@ -508,7 +508,7 @@ F 3 "~" H 6350 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Dimmer-rescue:Key-Touchpad-Dimmer-rescue k3
+L Dimmer-rescue:Key-Touchpad k3
 U 1 1 60C69E9B
 P 8150 5000
 F 0 "k3" H 8108 5125 50  0000 C CNN
@@ -519,7 +519,7 @@ F 3 "" H 8150 5000 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Dimmer-rescue:Key-Touchpad-Dimmer-rescue k2
+L Dimmer-rescue:Key-Touchpad k2
 U 1 1 60C693B3
 P 8150 3200
 F 0 "k2" H 8108 3325 50  0000 C CNN
@@ -530,7 +530,7 @@ F 3 "" H 8150 3200 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Dimmer-rescue:Key-Touchpad-Dimmer-rescue k1
+L Dimmer-rescue:Key-Touchpad k1
 U 1 1 60C6833A
 P 8150 3400
 F 0 "k1" H 8108 3525 50  0000 C CNN
@@ -541,7 +541,7 @@ F 3 "" H 8150 3400 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Dimmer-rescue:Key-Touchpad-Dimmer-rescue k5
+L Dimmer-rescue:Key-Touchpad k5
 U 1 1 60DCD999
 P 8150 3700
 F 0 "k5" H 8108 3825 50  0000 C CNN
@@ -552,7 +552,7 @@ F 3 "" H 8150 3700 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Dimmer-rescue:Key-Touchpad-Dimmer-rescue k4
+L Dimmer-rescue:Key-Touchpad k4
 U 1 1 60DCDD4E
 P 8150 3600
 F 0 "k4" H 8108 3725 50  0000 C CNN
@@ -563,7 +563,7 @@ F 3 "" H 8150 3600 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Dimmer-rescue:Key-Touchpad-Dimmer-rescue k6
+L Dimmer-rescue:Key-Touchpad k6
 U 1 1 60DCE2FD
 P 8150 3800
 F 0 "k6" H 8108 3925 50  0000 C CNN
@@ -574,7 +574,7 @@ F 3 "" H 8150 3800 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Dimmer-rescue:Key-Touchpad-Dimmer-rescue k7
+L Dimmer-rescue:Key-Touchpad k7
 U 1 1 60DCEBF7
 P 8150 4900
 F 0 "k7" H 8108 5025 50  0000 C CNN
@@ -947,7 +947,7 @@ Wire Wire Line
 Wire Wire Line
 	3000 2500 3000 2800
 $Comp
-L Dimmer-rescue:HEADER_2x2-w_connectors-Dimmer-rescue J1
+L Dimmer-rescue:HEADER_2x2-w_connectors J1
 U 1 1 60F5D81B
 P 1600 3750
 F 0 "J1" H 1600 4037 60  0000 C CNN
@@ -1286,7 +1286,7 @@ F 3 "https://www.wolfspeed.com/media/downloads/825/C3M0280090D.pdf" H 2800 2500 
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Dimmer-rescue:Fan3100tsx-Fan3100TSX-Dimmer-rescue D7
+L Dimmer-rescue:Fan3100tsx-Fan3100TSX D7
 U 1 1 60DE385E
 P 3600 2700
 F 0 "D7" H 3625 2825 50  0000 C CNN
