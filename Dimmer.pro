@@ -1,4 +1,4 @@
-update=03.08.2021 20:12:53
+update=04.08.2021 20:39:43
 version=1
 last_client=pcbnew
 [general]
@@ -25,7 +25,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=Dimmer(2).net
+LastNetListRead=Dimmer.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
