@@ -112,21 +112,10 @@ L pspice:C C8
 U 1 1 60D4A8A9
 P 5040 3985
 F 0 "C8" H 5218 4031 50  0000 L CNN
-F 1 "0.1mk" H 5218 3940 50  0000 L CNN
+F 1 "0.1uF" H 5218 3940 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 5040 3985 50  0001 C CNN
 F 3 "~" H 5040 3985 50  0001 C CNN
 	1    5040 3985
-	1    0    0    -1  
-$EndComp
-$Comp
-L pspice:C C11
-U 1 1 60D49DBD
-P 3990 3985
-F 0 "C11" H 4168 4031 50  0000 L CNN
-F 1 "0.33mk" H 4168 3940 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 3990 3985 50  0001 C CNN
-F 3 "~" H 3990 3985 50  0001 C CNN
-	1    3990 3985
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -181,28 +170,6 @@ F 1 "GND" H 9605 3262 50  0000 C CNN
 F 2 "" H 9600 3435 50  0001 C CNN
 F 3 "" H 9600 3435 50  0001 C CNN
 	1    9600 3435
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0109
-U 1 1 60D2EC9A
-P 8850 4700
-F 0 "#PWR0109" H 8850 4450 50  0001 C CNN
-F 1 "GND" H 8855 4527 50  0000 C CNN
-F 2 "" H 8850 4700 50  0001 C CNN
-F 3 "" H 8850 4700 50  0001 C CNN
-	1    8850 4700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x03 J7
-U 1 1 60D220F1
-P 9050 4600
-F 0 "J7" H 9130 4642 50  0000 L CNN
-F 1 "I2C" H 9130 4551 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 9050 4600 50  0001 C CNN
-F 3 "~" H 9050 4600 50  0001 C CNN
-	1    9050 4600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -315,15 +282,15 @@ $EndComp
 Text GLabel 3210 5460 0    50   Input ~ 0
 Load_cntrl
 $Comp
-L Switch:SW_Push SW1
+L Switch:SW_Push RST2
 U 1 1 60D53F98
 P 6350 3100
-F 0 "SW1" H 6350 3385 50  0000 C CNN
+F 0 "RST2" H 6350 3385 50  0000 C CNN
 F 1 "SW_Push" H 6350 3294 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W6.73mm_P2.54mm_LowProfile_JPin" H 6350 3300 50  0001 C CNN
+F 2 "Touch_pad:aLIEXPRESS_BUTTON_G71Y" H 6350 3300 50  0001 C CNN
 F 3 "~" H 6350 3300 50  0001 C CNN
 	1    6350 3100
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Dimmer-rescue:Key-Touchpad-Dimmer-rescue k3
@@ -392,17 +359,6 @@ F 3 "" H 8150 4900 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Connection ~ 6550 3100
-$Comp
-L Switch:SW_Push SW2
-U 1 1 60D462E0
-P 9800 3435
-F 0 "SW2" H 9800 3720 50  0000 C CNN
-F 1 "SW_Push" H 9800 3629 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W6.73mm_P2.54mm_LowProfile_JPin" H 9800 3635 50  0001 C CNN
-F 3 "~" H 9800 3635 50  0001 C CNN
-	1    9800 3435
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9600 2250 9000 2250
 Connection ~ 9000 2250
@@ -772,10 +728,10 @@ F 3 "" H 1750 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J8
+L Connector_Generic:Conn_01x01 S_VP1
 U 1 1 61075A14
 P 6700 3300
-F 0 "J8" H 6810 3305 50  0000 C CNN
+F 0 "S_VP1" H 6810 3305 50  0000 C CNN
 F 1 "ADC" H 6675 3300 50  0000 C CNN
 F 2 "SMout:polz_razjem" H 6700 3300 50  0001 C CNN
 F 3 "~" H 6700 3300 50  0001 C CNN
@@ -783,10 +739,10 @@ F 3 "~" H 6700 3300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J13
+L Connector_Generic:Conn_01x01 S_VN1
 U 1 1 61075F35
 P 6700 3400
-F 0 "J13" H 6845 3405 50  0000 C CNN
+F 0 "S_VN1" H 6845 3405 50  0000 C CNN
 F 1 "ADC" H 6695 3405 50  0000 C CNN
 F 2 "SMout:polz_razjem" H 6700 3400 50  0001 C CNN
 F 3 "~" H 6700 3400 50  0001 C CNN
@@ -952,10 +908,10 @@ $EndComp
 Wire Wire Line
 	1550 1200 2300 1200
 $Comp
-L Connector_Generic:Conn_01x01 J20
+L Connector_Generic:Conn_01x01 RST1
 U 1 1 60FA189B
 P 6345 3290
-F 0 "J20" H 6345 3205 50  0000 C CNN
+F 0 "RST1" H 6345 3205 50  0000 C CNN
 F 1 "Rst" H 6345 3380 50  0000 C CNN
 F 2 "SMout:polz_razjem" H 6345 3290 50  0001 C CNN
 F 3 "~" H 6345 3290 50  0001 C CNN
@@ -968,22 +924,20 @@ Wire Wire Line
 	6550 3290 6545 3290
 Text GLabel 6100 1350 2    50   Input ~ 0
 Detect_null
-Text GLabel 3210 5660 0    50   Input ~ 0
+Text GLabel 3210 5560 0    50   Input ~ 0
 Detect_null
 $Comp
-L Connector_Generic:Conn_01x05 J16
+L Connector_Generic:Conn_01x06 J16
 U 1 1 60FDB628
 P 9800 2750
 F 0 "J16" H 9880 2792 50  0000 L CNN
-F 1 "Conn_01x05" H 9880 2701 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 9800 2750 50  0001 C CNN
+F 1 "Conn_01x06" H 9880 2701 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 9800 2750 50  0001 C CNN
 F 3 "~" H 9800 2750 50  0001 C CNN
 	1    9800 2750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9600 2950 9600 3435
-Text GLabel 9600 2850 0    50   Input ~ 0
+Text GLabel 9600 2750 0    50   Input ~ 0
 null
 Text GLabel 9600 2650 0    50   Input ~ 0
 cntrl
@@ -1013,10 +967,10 @@ Wire Wire Line
 Wire Wire Line
 	8600 4225 8855 4225
 $Comp
-L Connector_Generic:Conn_01x01 J6
+L Connector_Generic:Conn_01x01 SD2
 U 1 1 610206AD
 P 6700 4500
-F 0 "J6" H 6810 4495 50  0000 C CNN
+F 0 "SD2" H 6810 4495 50  0000 C CNN
 F 1 "Pin" H 6820 4495 50  0001 C CNN
 F 2 "SMout:polz_razjem" H 6700 4500 50  0001 C CNN
 F 3 "~" H 6700 4500 50  0001 C CNN
@@ -1024,10 +978,10 @@ F 3 "~" H 6700 4500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J10
+L Connector_Generic:Conn_01x01 SD3
 U 1 1 61020DDC
 P 6700 4600
-F 0 "J10" H 6825 4600 50  0000 C CNN
+F 0 "SD3" H 6825 4600 50  0000 C CNN
 F 1 "Pin" H 6618 4466 50  0001 C CNN
 F 2 "SMout:polz_razjem" H 6700 4600 50  0001 C CNN
 F 3 "~" H 6700 4600 50  0001 C CNN
@@ -1035,10 +989,10 @@ F 3 "~" H 6700 4600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J12
+L Connector_Generic:Conn_01x01 CLK1
 U 1 1 61021421
 P 6700 4700
-F 0 "J12" H 6830 4700 50  0000 C CNN
+F 0 "CLK1" H 6830 4700 50  0000 C CNN
 F 1 "Pin" H 6618 4566 50  0001 C CNN
 F 2 "SMout:polz_razjem" H 6700 4700 50  0001 C CNN
 F 3 "~" H 6700 4700 50  0001 C CNN
@@ -1046,10 +1000,10 @@ F 3 "~" H 6700 4700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J15
+L Connector_Generic:Conn_01x01 CMD1
 U 1 1 610218AD
 P 6700 4800
-F 0 "J15" H 6830 4800 50  0000 C CNN
+F 0 "CMD1" H 6830 4800 50  0000 C CNN
 F 1 "Pin" H 6840 4785 50  0001 C CNN
 F 2 "SMout:polz_razjem" H 6700 4800 50  0001 C CNN
 F 3 "~" H 6700 4800 50  0001 C CNN
@@ -1058,22 +1012,8 @@ F 3 "~" H 6700 4800 50  0001 C CNN
 $EndComp
 Text GLabel 10250 4900 1    50   Input ~ 0
 RED
-Text GLabel 10200 3335 0    50   Input ~ 0
+Text GLabel 10200 3435 2    50   Input ~ 0
 Mode
-$Comp
-L Connector_Generic:Conn_01x02 J23
-U 1 1 60F62329
-P 10400 3335
-F 0 "J23" H 10480 3327 50  0000 L CNN
-F 1 "Mode" H 10480 3236 50  0000 L CNN
-F 2 "SMout:2pins" H 10400 3335 50  0001 C CNN
-F 3 "~" H 10400 3335 50  0001 C CNN
-	1    10400 3335
-	1    0    0    -1  
-$EndComp
-Connection ~ 9600 3435
-Wire Wire Line
-	10200 3435 10000 3435
 Wire Wire Line
 	8350 2750 8600 2750
 $Comp
@@ -1090,20 +1030,8 @@ $EndComp
 Connection ~ 5040 3735
 Wire Wire Line
 	5040 3585 5040 3735
-Connection ~ 3990 3735
 Wire Wire Line
 	3990 3635 3990 3735
-$Comp
-L Regulator_Linear:L78L33_SO8 U3
-U 1 1 60D3EFFA
-P 4490 3735
-F 0 "U3" H 4490 3977 50  0000 C CNN
-F 1 "L78L33_SO8" H 4490 3886 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4590 3935 50  0001 C CIN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf" H 4690 3735 50  0001 C CNN
-	1    4490 3735
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+12V #PWR0115
 U 1 1 60D418DB
@@ -1116,10 +1044,10 @@ F 3 "" H 3990 3635 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J5
+L Connector_Generic:Conn_01x01 SD1
 U 1 1 610201AA
 P 6700 4400
-F 0 "J5" H 6815 4385 50  0000 C CNN
+F 0 "SD1" H 6815 4385 50  0000 C CNN
 F 1 "Pin" H 7035 4420 50  0001 C CNN
 F 2 "SMout:polz_razjem" H 6700 4400 50  0001 C CNN
 F 3 "~" H 6700 4400 50  0001 C CNN
@@ -1127,10 +1055,10 @@ F 3 "~" H 6700 4400 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J14
+L Connector_Generic:Conn_01x01 SD0
 U 1 1 60E612E1
 P 6700 4300
-F 0 "J14" H 6825 4290 50  0000 C CNN
+F 0 "SD0" H 6825 4290 50  0000 C CNN
 F 1 "Pin" H 6810 4320 50  0001 C CNN
 F 2 "SMout:polz_razjem" H 6700 4300 50  0001 C CNN
 F 3 "~" H 6700 4300 50  0001 C CNN
@@ -1209,14 +1137,6 @@ Connection ~ 1425 4960
 Wire Wire Line
 	1930 4960 1930 5035
 Connection ~ 1930 4960
-Text GLabel 8100 3500 2    50   Input ~ 0
-O.S.
-Text GLabel 9600 2750 0    50   Input ~ 0
-O.S.
-Text GLabel 2730 4720 0    50   Input ~ 0
-SDA
-Text GLabel 2730 4820 0    50   Input ~ 0
-SCL
 Text GLabel 1960 5360 2    50   Input ~ 0
 SDA
 Wire Wire Line
@@ -1237,30 +1157,6 @@ Wire Wire Line
 Connection ~ 2195 5460
 NoConn ~ 8100 5300
 NoConn ~ 8100 4800
-Wire Wire Line
-	1825 5560 3210 5560
-$Comp
-L Connector_Generic:Conn_01x05 J4
-U 1 1 60F8C200
-P 3410 5560
-F 0 "J4" H 3490 5602 50  0000 L CNN
-F 1 "Conn_01x05" H 3490 5511 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 3410 5560 50  0001 C CNN
-F 3 "~" H 3410 5560 50  0001 C CNN
-	1    3410 5560
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0120
-U 1 1 60F02207
-P 3210 5760
-F 0 "#PWR0120" H 3210 5510 50  0001 C CNN
-F 1 "GND" H 3215 5587 50  0000 C CNN
-F 2 "" H 3210 5760 50  0001 C CNN
-F 3 "" H 3210 5760 50  0001 C CNN
-	1    3210 5760
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0121
 U 1 1 6118EA87
@@ -1273,32 +1169,6 @@ F 3 "" H 1425 6080 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 1425 6080
-Wire Wire Line
-	8100 4600 8850 4600
-Wire Wire Line
-	8100 4500 8850 4500
-$Comp
-L Connector_Generic:Conn_01x03 J17
-U 1 1 611B5B44
-P 2930 4820
-F 0 "J17" H 3010 4862 50  0000 L CNN
-F 1 "I2C" H 3010 4771 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 2930 4820 50  0001 C CNN
-F 3 "~" H 2930 4820 50  0001 C CNN
-	1    2930 4820
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0122
-U 1 1 611B6CC5
-P 2730 4920
-F 0 "#PWR0122" H 2730 4670 50  0001 C CNN
-F 1 "GND" H 2735 4747 50  0000 C CNN
-F 2 "" H 2730 4920 50  0001 C CNN
-F 3 "" H 2730 4920 50  0001 C CNN
-	1    2730 4920
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J2
 U 1 1 60C48D5A
@@ -1310,4 +1180,88 @@ F 3 "~" H 8800 2750 50  0001 C CNN
 	1    8800 2750
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR0120
+U 1 1 60F02207
+P 3210 5860
+F 0 "#PWR0120" H 3210 5610 50  0001 C CNN
+F 1 "GND" H 3215 5687 50  0000 C CNN
+F 2 "" H 3210 5860 50  0001 C CNN
+F 3 "" H 3210 5860 50  0001 C CNN
+	1    3210 5860
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J4
+U 1 1 60F8C200
+P 3410 5560
+F 0 "J4" H 3490 5602 50  0000 L CNN
+F 1 "Conn_01x06" H 3490 5511 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 3410 5560 50  0001 C CNN
+F 3 "~" H 3410 5560 50  0001 C CNN
+	1    3410 5560
+	1    0    0    -1  
+$EndComp
+Text GLabel 3210 5760 0    50   Input ~ 0
+SDA
+Text GLabel 3210 5660 0    50   Input ~ 0
+SCL
+NoConn ~ 8100 3500
+Wire Wire Line
+	9600 3048 9600 3050
+Wire Wire Line
+	9600 3440 9604 3440
+Wire Wire Line
+	9604 3440 9604 3436
+Connection ~ 9600 3050
+Wire Wire Line
+	9600 3050 9600 3435
+Connection ~ 9600 3435
+Wire Wire Line
+	9600 3435 9600 3440
+Text GLabel 9600 2950 0    50   Input ~ 0
+SDA
+Text GLabel 9600 2850 0    50   Input ~ 0
+SCL
+NoConn ~ 1825 5560
+Text GLabel 8100 4600 2    50   Input ~ 0
+SCL
+Text GLabel 8100 4500 2    50   Input ~ 0
+SDA
+Connection ~ 3990 3735
+$Comp
+L Regulator_Linear:AMS1117-3.3 U22
+U 1 1 61145694
+P 4490 3735
+F 0 "U22" H 4500 4020 50  0000 C CNN
+F 1 "AMS1117-3.3" H 4500 3920 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 4490 3935 50  0001 C CNN
+F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 4590 3485 50  0001 C CNN
+	1    4490 3735
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:C C11
+U 1 1 60D49DBD
+P 3990 3985
+F 0 "C11" H 4168 4031 50  0000 L CNN
+F 1 "1uF" H 4168 3940 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3990 3985 50  0001 C CNN
+F 3 "~" H 3990 3985 50  0001 C CNN
+	1    3990 3985
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push Mode1
+U 1 1 60D462E0
+P 9800 3435
+F 0 "Mode1" H 9800 3720 50  0000 C CNN
+F 1 "SW_Push" H 9800 3629 50  0000 C CNN
+F 2 "Touch_pad:aLIEXPRESS_BUTTON_G71Y" H 9800 3635 50  0001 C CNN
+F 3 "~" H 9800 3635 50  0001 C CNN
+	1    9800 3435
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 3435 10200 3435
 $EndSCHEMATC

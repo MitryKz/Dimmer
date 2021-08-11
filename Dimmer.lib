@@ -1,6 +1,23 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# Button_G71Y
+#
+DEF Button_G71Y B 0 40 Y Y 1 F N
+F0 "B" 0 0 50 H V C CNN
+F1 "Button_G71Y" -50 -50 50 H V C CNN
+F2 "Touch_pad:aLIEXPRESS_BUTTON_G71Y" 0 -300 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C -130 -200 20 1 1 0 N
+C 30 -200 20 1 1 0 N
+P 2 1 1 0 -50 -150 -50 -80 N
+P 2 1 1 0 50 -150 -150 -150 N
+X ~ 1 -250 -200 100 R 50 50 1 1 P
+X ~ 2 150 -200 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Connector_Generic_Conn_01x01
 #
 DEF Connector_Generic_Conn_01x01 J 0 40 Y N 1 F N

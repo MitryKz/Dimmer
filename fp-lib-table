@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name SMout)(type KiCad)(uri ${KIPRJMOD}/SMout.pretty)(options "")(descr ""))
+  (lib (name Touch_pad)(type KiCad)(uri ${KIPRJMOD}/Touch_pad.pretty)(options "")(descr ""))
+)
