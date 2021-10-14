@@ -76,7 +76,7 @@ U 1 1 60C276CD
 P 7050 2500
 F 0 "C4" H 7228 2546 50  0000 L CNN
 F 1 "100mk" H 7228 2455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1210_3225Metric" H 7050 2500 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7050 2500 50  0001 C CNN
 F 3 "~" H 7050 2500 50  0001 C CNN
 	1    7050 2500
 	1    0    0    -1  
@@ -241,7 +241,7 @@ U 1 1 60C119AD
 P 8350 2550
 F 0 "R5" H 8420 2596 50  0000 L CNN
 F 1 "10k" H 8420 2505 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 8280 2550 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8280 2550 50  0001 C CNN
 F 3 "~" H 8350 2550 50  0001 C CNN
 	1    8350 2550
 	1    0    0    -1  
@@ -249,12 +249,12 @@ $EndComp
 $Comp
 L power:+3.3V #PWR0119
 U 1 1 60F08572
-P 3210 5360
-F 0 "#PWR0119" H 3210 5210 50  0001 C CNN
-F 1 "+3.3V" H 3225 5533 50  0000 C CNN
-F 2 "" H 3210 5360 50  0001 C CNN
-F 3 "" H 3210 5360 50  0001 C CNN
-	1    3210 5360
+P 4130 5340
+F 0 "#PWR0119" H 4130 5190 50  0001 C CNN
+F 1 "+3.3V" H 4145 5513 50  0000 C CNN
+F 2 "" H 4130 5340 50  0001 C CNN
+F 3 "" H 4130 5340 50  0001 C CNN
+	1    4130 5340
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -279,7 +279,7 @@ F 3 "~" H 600 3250 50  0001 C CNN
 	1    600  3250
 	-1   0    0    1   
 $EndComp
-Text GLabel 3210 5460 0    50   Input ~ 0
+Text GLabel 4130 5440 0    50   Input ~ 0
 Load_cntrl
 $Comp
 L Switch:SW_Push RST2
@@ -371,28 +371,6 @@ MOSI
 Text GLabel 8855 4325 0    50   Input ~ 0
 MOSI
 $Comp
-L Diode:BAV99 D1
-U 1 1 60E76FE3
-P 2300 1000
-F 0 "D1" H 2300 1216 50  0000 C CNN
-F 1 "BAV99" H 2300 1125 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 2300 500 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 2300 1000 50  0001 C CNN
-	1    2300 1000
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Diode:BAV99 D2
-U 1 1 60E79BB8
-P 2300 1900
-F 0 "D2" H 2300 2116 50  0000 C CNN
-F 1 "BAV99" H 2300 2025 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 2300 1400 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 2300 1900 50  0001 C CNN
-	1    2300 1900
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Diode:BZX84Cxx D3
 U 1 1 60E7F39C
 P 3150 1300
@@ -402,17 +380,6 @@ F 2 "Diode_SMD:D_SOT-23_ANK" H 3150 1125 50  0001 C CNN
 F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzx84c2v4.pdf" H 3150 1300 50  0001 C CNN
 	1    3150 1300
 	0    1    1    0   
-$EndComp
-$Comp
-L pspice:C C2
-U 1 1 60E7F832
-P 4050 1650
-F 0 "C2" H 4228 1696 50  0000 L CNN
-F 1 "0.47mk" H 4228 1605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 4050 1650 50  0001 C CNN
-F 3 "~" H 4050 1650 50  0001 C CNN
-	1    4050 1650
-	1    0    0    -1  
 $EndComp
 $Comp
 L Isolator:TLP185 U4
@@ -442,7 +409,7 @@ U 1 1 60E83F79
 P 4050 850
 F 0 "D4" V 4096 770 50  0000 R CNN
 F 1 "1N4148WT" V 4005 770 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-523" H 4050 675 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 4050 675 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/ds30396.pdf" H 4050 850 50  0001 C CNN
 	1    4050 850 
 	0    -1   -1   0   
@@ -453,31 +420,15 @@ U 1 1 60E8CE96
 P 3500 1300
 F 0 "R8" H 3570 1346 50  0000 L CNN
 F 1 "330k 0.25W" H 3570 1255 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3430 1300 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3430 1300 50  0001 C CNN
 F 3 "~" H 3500 1300 50  0001 C CNN
 	1    3500 1300
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R10
-U 1 1 60E8EFC3
-P 4550 1150
-F 0 "R10" H 4620 1196 50  0000 L CNN
-F 1 "220" H 4620 1105 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 4480 1150 50  0001 C CNN
-F 3 "~" H 4550 1150 50  0001 C CNN
-	1    4550 1150
-	0    1    1    0   
 $EndComp
 Wire Wire Line
 	5350 1900 5350 1550
 Wire Wire Line
 	5350 1550 5500 1550
-Wire Wire Line
-	2600 1900 2850 1900
-Connection ~ 4050 1900
-Wire Wire Line
-	4050 1900 5350 1900
 Wire Wire Line
 	5250 1150 5350 1150
 Wire Wire Line
@@ -497,32 +448,13 @@ Wire Wire Line
 Connection ~ 4050 1150
 Wire Wire Line
 	4050 1150 4050 1000
-Wire Wire Line
-	2600 1000 2850 1000
-Wire Wire Line
-	2850 1000 2850 1900
-Connection ~ 2850 1900
-Wire Wire Line
-	2850 1900 3150 1900
-Wire Wire Line
-	2000 1900 1900 1900
-Wire Wire Line
-	1900 1900 1900 1600
-Wire Wire Line
-	1900 1600 2950 1600
-Wire Wire Line
-	2950 1600 2950 700 
-Wire Wire Line
-	2950 700  3150 700 
 Connection ~ 4050 700 
 Wire Wire Line
 	3150 700  3150 1150
 Wire Wire Line
 	3150 1450 3150 1900
-Connection ~ 3150 700 
 Wire Wire Line
 	3150 700  3500 700 
-Connection ~ 3150 1900
 Wire Wire Line
 	3150 1900 3500 1900
 Wire Wire Line
@@ -530,18 +462,9 @@ Wire Wire Line
 Wire Wire Line
 	3500 1150 3500 700 
 Connection ~ 3500 1900
-Wire Wire Line
-	3500 1900 4050 1900
 Connection ~ 3500 700 
 Wire Wire Line
 	3500 700  4050 700 
-Wire Wire Line
-	2000 1000 1900 1000
-Wire Wire Line
-	1900 1000 1900 700 
-Wire Wire Line
-	1900 700  2950 700 
-Connection ~ 2950 700 
 $Comp
 L power:GND #PWR0106
 U 1 1 60EDD63A
@@ -556,57 +479,6 @@ $EndComp
 Wire Wire Line
 	6100 1550 6150 1550
 $Comp
-L Device:R R4
-U 1 1 60F2AFE9
-P 1400 1200
-F 0 "R4" H 1470 1246 50  0000 L CNN
-F 1 "120k 0.25W" H 1470 1155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1330 1200 50  0001 C CNN
-F 3 "~" H 1400 1200 50  0001 C CNN
-	1    1400 1200
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:R R6
-U 1 1 60F2BBE6
-P 1400 2100
-F 0 "R6" H 1470 2146 50  0000 L CNN
-F 1 "120k 0.25W" H 1470 2055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1330 2100 50  0001 C CNN
-F 3 "~" H 1400 2100 50  0001 C CNN
-	1    1400 2100
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:R R7
-U 1 1 60F2CDDC
-P 1750 2550
-F 0 "R7" H 1820 2596 50  0000 L CNN
-F 1 "220 1W" H 1820 2505 50  0000 L CNN
-F 2 "Resistor_SMD:R_2512_6332Metric" V 1680 2550 50  0001 C CNN
-F 3 "~" H 1750 2550 50  0001 C CNN
-	1    1750 2550
-	1    0    0    1   
-$EndComp
-$Comp
-L pspice:C C1
-U 1 1 60F3CB59
-P 1750 2950
-F 0 "C1" H 1928 2996 50  0000 L CNN
-F 1 "0.01mk" H 1928 2905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 1750 2950 50  0001 C CNN
-F 3 "~" H 1750 2950 50  0001 C CNN
-	1    1750 2950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3250 2800 3000 2800
-Connection ~ 3000 2800
-Wire Wire Line
-	3000 2800 3000 3050
-Wire Wire Line
-	3000 2500 3000 2800
-$Comp
 L Dimmer-rescue:HEADER_2x2-w_connectors-Dimmer-rescue-Dimmer-rescue J1
 U 1 1 60F5D81B
 P 1600 3750
@@ -617,57 +489,10 @@ F 3 "" H 1600 3750 60  0000 C CNN
 	1    1600 3750
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0107
-U 1 1 60F5EA64
-P 3250 3000
-F 0 "#PWR0107" H 3250 2750 50  0001 C CNN
-F 1 "GND" H 3255 2827 50  0000 C CNN
-F 2 "" H 3250 3000 50  0001 C CNN
-F 3 "" H 3250 3000 50  0001 C CNN
-	1    3250 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0113
-U 1 1 60F5F021
-P 2400 2800
-F 0 "#PWR0113" H 2400 2550 50  0001 C CNN
-F 1 "GND" H 2405 2627 50  0000 C CNN
-F 2 "" H 2400 2800 50  0001 C CNN
-F 3 "" H 2400 2800 50  0001 C CNN
-	1    2400 2800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2700 2850 2700 2800
-Wire Wire Line
-	2400 2800 2700 2800
-Connection ~ 2700 2800
-Wire Wire Line
-	2700 2800 2700 2700
-Wire Wire Line
-	2700 2300 1750 2300
-Wire Wire Line
-	1750 2300 1750 2400
-Wire Wire Line
-	1750 3200 1750 3250
-Wire Wire Line
-	800  3250 1750 3250
-Connection ~ 1750 3250
-Wire Wire Line
-	1750 3250 2700 3250
-Wire Wire Line
-	1250 1550 1000 1550
-Wire Wire Line
-	800  1550 800  2000
 Wire Wire Line
 	1450 3700 1000 3700
 Wire Wire Line
 	1000 3700 1000 2300
-Connection ~ 1000 1550
-Wire Wire Line
-	1000 1550 800  1550
 Wire Wire Line
 	800  2100 900  2100
 Wire Wire Line
@@ -679,15 +504,7 @@ Wire Wire Line
 Connection ~ 900  3150
 Wire Wire Line
 	900  3150 900  3800
-Wire Wire Line
-	1750 2300 1000 2300
-Connection ~ 1750 2300
 Connection ~ 1000 2300
-Wire Wire Line
-	1000 2300 1000 1550
-Wire Wire Line
-	1250 2100 900  2100
-Connection ~ 900  2100
 $Comp
 L power:GND #PWR0117
 U 1 1 60FBD5CD
@@ -697,23 +514,6 @@ F 1 "GND" H 1755 3627 50  0000 C CNN
 F 2 "" H 1750 3800 50  0001 C CNN
 F 3 "" H 1750 3800 50  0001 C CNN
 	1    1750 3800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1250 1200 1250 1550
-Wire Wire Line
-	1550 2100 2300 2100
-Text GLabel 4000 2950 2    50   Input ~ 0
-Load_cntrl
-$Comp
-L power:+12V #PWR0118
-U 1 1 61074A57
-P 4000 2800
-F 0 "#PWR0118" H 4000 2650 50  0001 C CNN
-F 1 "+12V" H 4015 2973 50  0000 C CNN
-F 2 "" H 4000 2800 50  0001 C CNN
-F 3 "" H 4000 2800 50  0001 C CNN
-	1    4000 2800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -781,7 +581,7 @@ U 1 1 60BF9F4D
 P 9300 5150
 F 0 "R1" H 9370 5196 50  0000 L CNN
 F 1 "2.2M" H 9370 5105 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 9230 5150 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 9230 5150 50  0001 C CNN
 F 3 "~" H 9300 5150 50  0001 C CNN
 	1    9300 5150
 	1    0    0    -1  
@@ -814,7 +614,7 @@ U 1 1 61137604
 P 9850 5050
 F 0 "R11" H 9920 5096 50  0000 L CNN
 F 1 "220" H 9920 5005 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 9780 5050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 9780 5050 50  0001 C CNN
 F 3 "~" H 9850 5050 50  0001 C CNN
 	1    9850 5050
 	1    0    0    -1  
@@ -825,7 +625,7 @@ U 1 1 61137C12
 P 10250 5050
 F 0 "R12" H 10320 5096 50  0000 L CNN
 F 1 "220" H 10320 5005 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 10180 5050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 10180 5050 50  0001 C CNN
 F 3 "~" H 10250 5050 50  0001 C CNN
 	1    10250 5050
 	1    0    0    -1  
@@ -862,52 +662,6 @@ Wire Wire Line
 Text GLabel 8100 5400 2    50   Input ~ 0
 photo
 $Comp
-L Transistor_FET:C3M0280090D Q2
-U 1 1 60DBB938
-P 2800 3050
-F 0 "Q2" H 3005 3004 50  0000 L CNN
-F 1 "IRFP460APBF" H 3005 3095 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-247-3_Horizontal_TabDown" H 2800 3050 50  0001 C CIN
-F 3 "https://www.wolfspeed.com/media/downloads/825/C3M0280090D.pdf" H 2800 3050 50  0001 L CNN
-	1    2800 3050
-	-1   0    0    1   
-$EndComp
-$Comp
-L Transistor_FET:C3M0280090D Q1
-U 1 1 60DDB34A
-P 2800 2500
-F 0 "Q1" H 3005 2546 50  0000 L CNN
-F 1 "IRFP460APBF" H 3005 2455 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-247-3_Horizontal_TabDown" H 2800 2500 50  0001 C CIN
-F 3 "https://www.wolfspeed.com/media/downloads/825/C3M0280090D.pdf" H 2800 2500 50  0001 L CNN
-	1    2800 2500
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Dimmer-rescue:Fan3100tsx-Fan3100TSX-Dimmer-rescue D7
-U 1 1 60DE385E
-P 3600 2700
-F 0 "D7" H 3625 2825 50  0000 C CNN
-F 1 "Fan3100tsx" H 3625 2734 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 3600 2700 50  0001 C CNN
-F 3 "" H 3600 2700 50  0001 C CNN
-	1    3600 2700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0124
-U 1 1 60DEA9D0
-P 4000 3050
-F 0 "#PWR0124" H 4000 2800 50  0001 C CNN
-F 1 "GND" H 4005 2877 50  0000 C CNN
-F 2 "" H 4000 3050 50  0001 C CNN
-F 3 "" H 4000 3050 50  0001 C CNN
-	1    4000 3050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1550 1200 2300 1200
-$Comp
 L Connector_Generic:Conn_01x01 RST1
 U 1 1 60FA189B
 P 6345 3290
@@ -922,9 +676,9 @@ Wire Wire Line
 	6550 3100 6550 3290
 Wire Wire Line
 	6550 3290 6545 3290
-Text GLabel 6100 1350 2    50   Input ~ 0
+Text GLabel 6375 1350 2    50   Input ~ 0
 Detect_null
-Text GLabel 3210 5560 0    50   Input ~ 0
+Text GLabel 4130 5540 0    50   Input ~ 0
 Detect_null
 $Comp
 L Connector_Generic:Conn_01x06 J16
@@ -1016,17 +770,6 @@ Text GLabel 10200 3435 2    50   Input ~ 0
 Mode
 Wire Wire Line
 	8350 2750 8600 2750
-$Comp
-L power:+3.3V #PWR0114
-U 1 1 60D41DF8
-P 5040 3585
-F 0 "#PWR0114" H 5040 3435 50  0001 C CNN
-F 1 "+3.3V" H 5055 3758 50  0000 C CNN
-F 2 "" H 5040 3585 50  0001 C CNN
-F 3 "" H 5040 3585 50  0001 C CNN
-	1    5040 3585
-	1    0    0    -1  
-$EndComp
 Connection ~ 5040 3735
 Wire Wire Line
 	5040 3585 5040 3735
@@ -1111,7 +854,7 @@ U 1 1 6114FB6E
 P 1930 5185
 F 0 "R9" H 2000 5231 50  0000 L CNN
 F 1 "10k" H 2000 5140 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1860 5185 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1860 5185 50  0001 C CNN
 F 3 "~" H 1930 5185 50  0001 C CNN
 	1    1930 5185
 	-1   0    0    -1  
@@ -1122,7 +865,7 @@ U 1 1 61150821
 P 2195 5170
 F 0 "R13" H 2265 5216 50  0000 L CNN
 F 1 "10k" H 2265 5125 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2125 5170 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2125 5170 50  0001 C CNN
 F 3 "~" H 2195 5170 50  0001 C CNN
 	1    2195 5170
 	1    0    0    -1  
@@ -1183,28 +926,28 @@ $EndComp
 $Comp
 L power:GND #PWR0120
 U 1 1 60F02207
-P 3210 5860
-F 0 "#PWR0120" H 3210 5610 50  0001 C CNN
-F 1 "GND" H 3215 5687 50  0000 C CNN
-F 2 "" H 3210 5860 50  0001 C CNN
-F 3 "" H 3210 5860 50  0001 C CNN
-	1    3210 5860
+P 4130 5840
+F 0 "#PWR0120" H 4130 5590 50  0001 C CNN
+F 1 "GND" H 4135 5667 50  0000 C CNN
+F 2 "" H 4130 5840 50  0001 C CNN
+F 3 "" H 4130 5840 50  0001 C CNN
+	1    4130 5840
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x06 J4
 U 1 1 60F8C200
-P 3410 5560
-F 0 "J4" H 3490 5602 50  0000 L CNN
-F 1 "Conn_01x06" H 3490 5511 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 3410 5560 50  0001 C CNN
-F 3 "~" H 3410 5560 50  0001 C CNN
-	1    3410 5560
+P 4330 5540
+F 0 "J4" H 4410 5582 50  0000 L CNN
+F 1 "Conn_01x06" H 4410 5491 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 4330 5540 50  0001 C CNN
+F 3 "~" H 4330 5540 50  0001 C CNN
+	1    4330 5540
 	1    0    0    -1  
 $EndComp
-Text GLabel 3210 5760 0    50   Input ~ 0
+Text GLabel 4130 5740 0    50   Input ~ 0
 SDA
-Text GLabel 3210 5660 0    50   Input ~ 0
+Text GLabel 4130 5640 0    50   Input ~ 0
 SCL
 NoConn ~ 8100 3500
 Wire Wire Line
@@ -1264,4 +1007,248 @@ F 3 "~" H 9800 3635 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10000 3435 10200 3435
+$Comp
+L Device:R R14
+U 1 1 6157ADDA
+P 6225 1195
+F 0 "R14" H 6295 1241 50  0000 L CNN
+F 1 "10k" H 6295 1150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6155 1195 50  0001 C CNN
+F 3 "~" H 6225 1195 50  0001 C CNN
+	1    6225 1195
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 1350 6225 1350
+Wire Wire Line
+	6225 1350 6225 1345
+Wire Wire Line
+	6225 1350 6375 1350
+Connection ~ 6225 1350
+$Comp
+L power:+3.3V #PWR0114
+U 1 1 60D41DF8
+P 5040 3585
+F 0 "#PWR0114" H 5040 3435 50  0001 C CNN
+F 1 "+3.3V" H 5055 3758 50  0000 C CNN
+F 2 "" H 5040 3585 50  0001 C CNN
+F 3 "" H 5040 3585 50  0001 C CNN
+	1    5040 3585
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0109
+U 1 1 61578F44
+P 6225 1045
+F 0 "#PWR0109" H 6225 895 50  0001 C CNN
+F 1 "+3.3V" H 6240 1218 50  0000 C CNN
+F 2 "" H 6225 1045 50  0001 C CNN
+F 3 "" H 6225 1045 50  0001 C CNN
+	1    6225 1045
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:BAV99 D1
+U 1 1 60E76FE3
+P 2755 1090
+F 0 "D1" H 2755 1306 50  0000 C CNN
+F 1 "BAV99" H 2755 1215 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2755 590 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 2755 1090 50  0001 C CNN
+	1    2755 1090
+	0    1    -1   0   
+$EndComp
+$Comp
+L Diode:BAV99 D2
+U 1 1 60E79BB8
+P 2095 1425
+F 0 "D2" H 2095 1641 50  0000 C CNN
+F 1 "BAV99" H 2095 1550 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2095 925 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 2095 1425 50  0001 C CNN
+	1    2095 1425
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 60F2AFE9
+P 2405 1090
+F 0 "R4" H 2475 1136 50  0000 L CNN
+F 1 "120k 0.25W" H 2475 1045 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2335 1090 50  0001 C CNN
+F 3 "~" H 2405 1090 50  0001 C CNN
+	1    2405 1090
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 60F2BBE6
+P 1745 1425
+F 0 "R6" H 1815 1471 50  0000 L CNN
+F 1 "120k 0.25W" H 1815 1380 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1675 1425 50  0001 C CNN
+F 3 "~" H 1745 1425 50  0001 C CNN
+	1    1745 1425
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	2755 790  2755 700 
+Connection ~ 2755 700 
+Wire Wire Line
+	2755 700  3150 700 
+Connection ~ 3150 700 
+Wire Wire Line
+	3150 1900 2755 1900
+Wire Wire Line
+	2755 1900 2755 1390
+Connection ~ 3150 1900
+Connection ~ 2755 1900
+Wire Wire Line
+	2095 1900 2095 1725
+Wire Wire Line
+	2095 1900 2755 1900
+Wire Wire Line
+	2095 700  2095 1125
+Wire Wire Line
+	2095 700  2755 700 
+Wire Wire Line
+	2255 1090 1000 1090
+Wire Wire Line
+	1595 1425 1100 1425
+Wire Wire Line
+	1100 1425 1100 2100
+Wire Wire Line
+	1100 2100 900  2100
+Connection ~ 900  2100
+Wire Wire Line
+	1000 1090 1000 2000
+Wire Wire Line
+	800  2000 1000 2000
+Connection ~ 1000 2000
+Wire Wire Line
+	1000 2000 1000 2300
+$Comp
+L Device:R R10
+U 1 1 60E8EFC3
+P 4550 1150
+F 0 "R10" H 4620 1196 50  0000 L CNN
+F 1 "220" H 4620 1105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4480 1150 50  0001 C CNN
+F 3 "~" H 4550 1150 50  0001 C CNN
+	1    4550 1150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3500 1900 4050 1900
+Wire Wire Line
+	4050 1900 5350 1900
+Connection ~ 4050 1900
+$Comp
+L pspice:C C2
+U 1 1 60E7F832
+P 4050 1650
+F 0 "C2" H 4228 1696 50  0000 L CNN
+F 1 "0.47mk" H 4228 1605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4050 1650 50  0001 C CNN
+F 3 "~" H 4050 1650 50  0001 C CNN
+	1    4050 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2430 2800 2180 2800
+Connection ~ 2180 2800
+Wire Wire Line
+	2180 2800 2180 3050
+Wire Wire Line
+	2180 2500 2180 2800
+$Comp
+L power:GND #PWR0107
+U 1 1 60F5EA64
+P 2430 3000
+F 0 "#PWR0107" H 2430 2750 50  0001 C CNN
+F 1 "GND" H 2435 2827 50  0000 C CNN
+F 2 "" H 2430 3000 50  0001 C CNN
+F 3 "" H 2430 3000 50  0001 C CNN
+	1    2430 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 60F5F021
+P 1580 2800
+F 0 "#PWR0113" H 1580 2550 50  0001 C CNN
+F 1 "GND" H 1585 2627 50  0000 C CNN
+F 2 "" H 1580 2800 50  0001 C CNN
+F 3 "" H 1580 2800 50  0001 C CNN
+	1    1580 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1880 2850 1880 2800
+Wire Wire Line
+	1580 2800 1880 2800
+Connection ~ 1880 2800
+Wire Wire Line
+	1880 2800 1880 2700
+Text GLabel 3180 2950 2    50   Input ~ 0
+Load_cntrl
+$Comp
+L power:+12V #PWR0118
+U 1 1 61074A57
+P 3180 2800
+F 0 "#PWR0118" H 3180 2650 50  0001 C CNN
+F 1 "+12V" H 3195 2973 50  0000 C CNN
+F 2 "" H 3180 2800 50  0001 C CNN
+F 3 "" H 3180 2800 50  0001 C CNN
+	1    3180 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:C3M0280090D Q2
+U 1 1 60DBB938
+P 1980 3050
+F 0 "Q2" H 2185 3004 50  0000 L CNN
+F 1 "IRFP460APBF" H 2185 3095 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-247-3_Horizontal_TabDown" H 1980 3050 50  0001 C CIN
+F 3 "https://www.wolfspeed.com/media/downloads/825/C3M0280090D.pdf" H 1980 3050 50  0001 L CNN
+	1    1980 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_FET:C3M0280090D Q1
+U 1 1 60DDB34A
+P 1980 2500
+F 0 "Q1" H 2185 2546 50  0000 L CNN
+F 1 "IRFP460APBF" H 2185 2455 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-247-3_Horizontal_TabDown" H 1980 2500 50  0001 C CIN
+F 3 "https://www.wolfspeed.com/media/downloads/825/C3M0280090D.pdf" H 1980 2500 50  0001 L CNN
+	1    1980 2500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Dimmer-rescue:Fan3100tsx-Fan3100TSX-Dimmer-rescue D7
+U 1 1 60DE385E
+P 2780 2700
+F 0 "D7" H 2805 2825 50  0000 C CNN
+F 1 "Fan3100tsx" H 2805 2734 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2780 2700 50  0001 C CNN
+F 3 "" H 2780 2700 50  0001 C CNN
+	1    2780 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0124
+U 1 1 60DEA9D0
+P 3180 3050
+F 0 "#PWR0124" H 3180 2800 50  0001 C CNN
+F 1 "GND" H 3185 2877 50  0000 C CNN
+F 2 "" H 3180 3050 50  0001 C CNN
+F 3 "" H 3180 3050 50  0001 C CNN
+	1    3180 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  3250 1880 3250
+Wire Wire Line
+	1000 2300 1880 2300
 $EndSCHEMATC
